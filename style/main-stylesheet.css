@@ -27,10 +27,13 @@ body {
     background-color: #ffffff;
 }
 
+.display-inline {
+    display: inline-block;
+}
 
 .primary-btn {
     background-color: #3CD8E8;
-    padding: 15px 20px;
+    padding: 10px 20px;
     display: inline-block;
     text-align: center;
     border-radius: 50px;
@@ -78,10 +81,11 @@ body {
     font-size: 1.5rem;
 }
 
-/*header section*/
-.header,
+/*set a max width*/
+header,
 .standard-section-container,
-.story-container {
+.story-container,
+.footer-container {
     max-width: 1160px;
     margin: 0 auto;
     padding: 20px 20px 0 20px;
@@ -129,12 +133,12 @@ body {
 }
 
 .btn {
-    padding: 10px 60px;
+    padding: 15px 45px;
     border: none;
-    border-radius: 12px;
+    border-radius: 16px;
     color: #ffffff;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 700;
     background-color: rgba(254, 163, 1, 1);
     cursor: pointer;
 }
@@ -200,9 +204,10 @@ body {
     gap: 20px;
     text-align: center;
     padding: 50px 40px;
-    max-width: 370px;
     border-radius: 20px;
     height: 400px;
+    flex: 1;
+
 }
 
 .card-img {
@@ -283,6 +288,7 @@ body {
         linear-gradient(to top, rgba(254, 163, 1, 0.1), rgba(255, 255, 255, 0));
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 
 }
 
@@ -295,6 +301,7 @@ body {
     margin-left: 20px;
     background-color: #95B226;
     color: #ffffff;
+    font-size: 0.9rem;
 }
 
 .mini-card-bg {
@@ -303,6 +310,8 @@ body {
 
 .second-card-container {
     justify-content: space-between;
+    gap: 20px;
+
 
 }
 
@@ -314,7 +323,7 @@ body {
 }
 
 .second-card-child-container {
-    max-width: 500px;
+    flex: 1;
     height: 630px;
     border-radius: 16px;
 }
@@ -341,7 +350,7 @@ body {
 }
 
 .mini-card {
-    max-width: 240px;
+
     border-radius: 16px;
     background-color: #ffffff;
 
@@ -357,7 +366,93 @@ body {
 
 
 .second-section-btn {
-    padding: 100px 0 60px;
+    padding: 100px 0 100px;
+}
+
+/*footer related style*/
+
+footer {
+    background-color: rgba(1, 172, 253, 1);
+
+}
+
+.footer-container {
+    gap: 10px;
+    padding: 100px 0;
+}
+
+.footer-child-container {
+    flex: 1;
+    color: #ffffff;
+
+}
+
+.center-align {
+    justify-content: center;
+}
+
+.footer-logo-container {
+    align-items: center;
+    padding-left: 20px;
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.logo-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+
+.footer-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 20px;
+    width: 90%;
+}
+
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.footer-child-container ul li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-child-container ul li a {
+    color: #ffffff;
+    font-size: 1.23rem;
+    font-weight: 500;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+/*marquee related style*/
+.marque-section {
+    padding: 10px 0;
+}
+
+.marque-section img {
+    width: 20px;
+
+}
+
+.marque-logo-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
 }
 
 /*media query for mobile device*/
@@ -403,9 +498,14 @@ body {
 
 
     /*first section*/
-    .card-container {
+    .card-container,
+    .footer-container {
         flex-direction: column;
         gap: 30px;
+    }
+
+    .child-container {
+        width: 90%;
     }
 
     .tow-side-arrow {
@@ -418,7 +518,7 @@ body {
     }
 
     .mini-cards-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
 
@@ -426,12 +526,19 @@ body {
         height: 100%;
     }
 
-    .mini-card {
-        max-width: 370px;
+
+    /*footer related media query*/
+    .center-align {
+        justify-content: flex-start;
     }
 
-    .mini-card h5 {
-        padding: 20px 20px 80px;
+    .footer-media-padding {
+        padding-left: 20px;
     }
+
+    .mini-card-btn {
+        font-size: 0.7rem;
+    }
+
 
 }
