@@ -48,7 +48,7 @@ body {
     color: rgba(1, 172, 253, 1);
 }
 
-.third-colr {
+.third-color {
     color: rgba(5, 212, 223, 1);
 }
 
@@ -79,6 +79,32 @@ body {
 
 .primary-font-size {
     font-size: 1.5rem;
+}
+
+/*hover effect*/
+.nav ul li:nth-child(1):hover {
+    border-bottom: 5px solid rgb(255, 165, 0);
+}
+
+.nav ul li:nth-child(2):hover {
+    border-bottom: 5px solid rgba(1, 172, 253, 1);
+
+}
+
+.nav ul li:nth-child(3):hover {
+    border-bottom: 5px solid rgba(5, 212, 223, 1);
+}
+
+.nav ul li:nth-child(4):hover {
+    border-bottom: 5px solid rgba(93, 88, 239, 1);
+}
+
+.nav-btn:hover {
+    background-color: rgb(205, 139, 15);
+}
+
+.effect-btn:hover {
+    background-color: rgb(89, 84, 84);
 }
 
 /*set a max width*/
@@ -120,6 +146,7 @@ header,
 .nav ul li {
     list-style: none;
     margin: 0 20px;
+    border-bottom: 5px solid transparent;
 }
 
 .nav ul li a {
