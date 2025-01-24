@@ -553,6 +553,10 @@ footer {
         height: 100%;
     }
 
+    .second-card-img-container img,
+    .mini-card-img-container img {
+        margin-bottom: -24px;
+    }
 
     /*footer related media query*/
     .center-align {
